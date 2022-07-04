@@ -1,0 +1,351 @@
+@media (max-width: 330px) {
+    .navbar .navbar-brand {
+        font-size: 2.5vmax;
+    }
+    figcaption {
+        font-size: 70% !important;
+        height: 40px !important;
+    }
+    figure img {
+        height: calc(100% - 40px) !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar {
+        padding: 1rem 1rem !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .collapse .navbar-nav .dropdown {
+        margin-left: auto;
+    }
+    .dropdown .dropdown-item {
+        text-align: right;
+    }
+}
+
+@media (max-width: 991px) {
+    .pageNameContainer, #pageTitleBox{
+        display: none;
+    }
+    .navbar {
+        height: auto !important;
+    }
+    .box {
+        height: fit-content !important;
+    }
+    figure {
+        height: auto !important;
+        width: 100vw !important;
+    }
+    #pagesCarousel, #photoCarousel {
+        display: none;
+    }
+    .mobileSetup {
+        display: block !important;
+    }
+    .desktop {
+        display: contents !important;
+    }
+}
+
+.footer {
+    position: static;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+#indexCarousel {
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+
+.indexCarouselItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.aboutImg {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.videoContainer {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+#pagesCarousel {
+    background-color: black;
+    width: 60vw;
+    height: auto;
+    margin: 0px auto;
+}
+
+#pagesCarousel .carousel-control-prev {
+    margin-left: -10vw;
+}
+
+#pagesCarousel .carousel-control-next {
+    margin-right: -10vw;
+}
+
+#pagesCarousel .carousel-indicators {
+    bottom: -4rem;
+}
+
+#photoCarousel {
+    background-color: white;
+    width: 60vw;
+    height: 70vh;
+    margin: 0px auto;
+}
+
+.photoCarouselWrapper {
+    width: inherit;
+    height: inherit;
+}
+
+.photographyImg {
+    width: 100%;
+    height: 70vh;
+    object-fit: contain;
+    opacity: 0.4;
+}
+
+.photographyImg:hover {
+    opacity: 1.0;
+}
+
+.photographyImg:hover + .showCaption {
+    display: none;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+.showCaption {
+    display: block;
+}
+
+.photoImgMobile {
+    width: 90vw;
+}
+
+#photoCarousel .carousel-control-prev {
+    margin-left: -10vw;
+}
+
+#photoCarousel .carousel-control-next {
+    margin-right: -10vw;
+}
+
+#photoCarousel .carousel-indicators {
+    bottom: -4rem;
+}
+
+.pagesSlides {
+    height: 500px;
+}
+
+.carouselArrows {
+    z-index: 30 !important;
+}
+
+.carousel .carousel-indicators li {
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid yellow;
+    border-left: 1px solid yellow;
+    border-right: 1px solid yellow;
+    border-color: black;
+    background-color: solid white;
+    z-index: 30 !important;
+}
+
+.navbar-light {
+    color: white;
+}
+
+.navbar {
+    z-index: 9;
+    padding: 1rem 3rem;
+    height: 10vh;
+}
+
+.navbar-brand {
+    font-size: 3vmax;
+    font-family: "Quicksand", sans-serif;
+}
+
+.navbar-nav {
+    font-family: "Montserrat", sans-serif;
+    text-align: right;
+}
+
+.navbar-toggler-icon {
+    width: 5vw;
+    height: 5vw;
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-item {
+    color: white;
+    text-align: left;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.navbar .navbar-text {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+
+.pageNameContainer {
+    height: auto;
+    width: 100vw;
+    margin-right: 1%;
+}
+
+#pageTitleBox {
+    float: right;
+    border: solid #000;
+    border-width: 1px 1px;
+    width: fit-content;
+    text-align: right;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 3px;
+    z-index: 9;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn a:hover {
+    color: #7E7E7E;
+}
+
+.aboutWidth {
+    width: 1000px;
+}
+
+.desktop {
+    max-width: 100vw;
+    height: calc(100vh - 10vh); /*implemented from top answer at https://stackoverflow.com/questions/4274914/100-div-height-without-scrollbar*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutBox {
+    border: solid #000;
+    border-width: 1px 1px;
+}
+
+.aboutText {
+    text-align: center;
+    font-size: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.aboutText h1{
+    font-weight: bold;
+}
+
+.box {
+    max-width: 100vw;
+    height: calc(100vh - 10vh);
+    display: flex;
+}
+
+figure {
+    margin: auto;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+figure img {
+    border: solid black;
+    border-width: 1px 1px;
+    height: calc(100% - 53px);
+    max-width: calc(100vw - 12px);
+    object-fit: contain;
+}
+
+figcaption {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+    height: 53px;
+    font-size: 100%;
+}
+
+.page.active {
+    display: inline;
+}
+
+.page {
+    display: none;
+}
+
+.mobileSetup {
+    display: none;
+    width: 90vw;
+    padding: 0 0;
+    margin-bottom: 3vh;
+}
+
+.mobileSlide {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+header {
+    margin: auto;
+    width: fit-content;
+}
+
+.contactFont {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}

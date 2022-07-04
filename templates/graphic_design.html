@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Graphic Design
+{% endblock %}
+
+{% block page_name %}
+    <div class="pageNameContainer">
+        <div class="container" id="pageTitleBox">
+            <span class="navbar-text">
+                Graphic Design
+            </span>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block main %}
+        <div class="box">
+            <figure>
+                <img src="{{url_for('static', filename='WS_Images/Graphic_Design/Waste-Poster-Web-Final.jpg')}}" alt="Waste Poster">
+                <figcaption>
+                    Theatrical Poster for "Waste" (2019)<br>Dir. Ladon Whitmire
+                </figcaption>
+            </figure>
+        </div>
+{% endblock %}

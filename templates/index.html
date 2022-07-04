@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block myScripts %}
+    <script type="text/javascript" src="{{url_for('static', filename='js/index_page_descriptor.js')}}"></script>
+{% endblock %}
+
+{% block title %}
+    Lorenzo Arritola
+{% endblock %}
+
+{% block main %}
+    <div id="indexCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="indexCarouselItems">
+                    <img class="aboutImg" src="{{url_for('static', filename='WS_Images/Video_Editing_Preview.jpg')}}" alt="First slide">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="indexCarouselItems">
+                    <img class="aboutImg" src="{{url_for('static', filename='WS_Images/Motion_Graphics_Preview.png')}}" alt="Second slide">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="indexCarouselItems">
+                    <img class="aboutImg" src="{{url_for('static', filename='WS_Images/Graphic_Design/Waste-Poster-Web-Final.jpg')}}" alt="Third slide">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="indexCarouselItems">
+                    <img class="aboutImg" src="{{url_for('static', filename='WS_Images/Photography/IMG_6633.jpg')}}" alt="Fourth slide">
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#indexCarousel" role="button" data-slide="prev">
+            <img id="prevMovie" src="{{url_for('static', filename='Custom_Icons/carousel-slider-left.svg')}}" alt="New Left Icon" width="32" height="32" class="carouselArrows">
+        </a>
+        <a class="carousel-control-next" href="#indexCarousel" role="button" data-slide="next">
+            <img id="nextMovie" src="{{url_for('static', filename='Custom_Icons/carousel-slider-right.svg')}}" alt="New Right Icon" width="32" height="32" class="carouselArrows">
+        </a>
+    </div>
+
+    <div>
+        <div class="btn rounded-0 mb-5 ml-5 mr-5" id="pageLinks">
+            PROJECTS /
+            <a class="page active" href="/video_editing">VIDEO EDITING</a>
+            <a class="page" href="/motion_graphics">MOTION GRAPHICS</a>
+            <a class="page" href="/graphic_design">GRAPHIC DESIGN</a>
+            <a class="page" href="/photography">PHOTOGRAPHY</a>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,172 @@
+{% extends "layout.html" %}
+
+{% block myScripts %}
+    <script type="text/javascript" src="{{url_for('static', filename='js/reset_scroll.js')}}"></script>
+{% endblock %}
+
+{% block title %}
+    Photography
+{% endblock %}
+
+{% block page_name %}
+    <div class="pageNameContainer">
+        <div class="container" id="pageTitleBox">
+            <span class="navbar-text">
+                Photography
+            </span>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block main %}
+    <div id="photoCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <ol class="carousel-indicators">
+            <li data-target="#photoCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#photoCarousel" data-slide-to="1"></li>
+            <li data-target="#photoCarousel" data-slide-to="2"></li>
+            <li data-target="#photoCarousel" data-slide-to="3"></li>
+            <li data-target="#photoCarousel" data-slide-to="4"></li>
+            <li data-target="#photoCarousel" data-slide-to="5"></li>
+            <li data-target="#photoCarousel" data-slide-to="6"></li>
+            <li data-target="#photoCarousel" data-slide-to="7"></li>
+            <li data-target="#photoCarousel" data-slide-to="8"></li>
+            <li data-target="#photoCarousel" data-slide-to="9"></li>
+            <li data-target="#photoCarousel" data-slide-to="10"></li>
+            <li data-target="#photoCarousel" data-slide-to="11"></li>
+            <li data-target="#photoCarousel" data-slide-to="12"></li>
+        </ol>
+        <div class="carousel-inner photoCarouselWrapper">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <img class="photographyImg" src="{{url_for('static', filename='WS_Images/Photography/IMG_6633.jpg')}}" alt="First slide">
+                    <div class="carousel-caption showCaption">
+                        <h5>The Armed - "Only Love" Release Show - Chicago, 4/27/2018</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img class="photographyImg" src="{{url_for('static', filename='WS_Images/Photography/IMG_6612_1.jpg')}}" alt="Second slide">
+                    <div class="carousel-caption showCaption">
+                        <h5>The Armed - "Only Love" Release Show - Chicago, 4/27/2018</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img class="photographyImg" src="{{url_for('static', filename='WS_Images/Photography/IMG_6629.jpg')}}" alt="Third slide">
+                    <div class="carousel-caption showCaption">
+                        <h5>The Armed - "Only Love" Release Show - Chicago, 4/27/2018</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img class="photographyImg" src="{{url_for('static', filename='WS_Images/Photography/IMG_9108.jpg')}}" alt="Fourth slide">
+                    <div class="carousel-caption showCaption">
+                        <h5>Melanie Miranda - "Conflicted EP" Release Show (2019)</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img class="photographyImg" src="{{url_for('static', filename='WS_Images/Photography/IMG_9182.jpg')}}" alt="Fifth slide">
+                    <div class="carousel-caption showCaption">
+                        <h5>Melanie Miranda - "Conflicted EP" Release Show (2019)</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img class="photographyImg" src="{{url_for('static', filename='WS_Images/Photography/IMG_8861.jpg')}}" alt="Sixth slide">
+                    <div class="carousel-caption showCaption">
+                        <h5>Set Photography for "Waste" (2019) - Dir. Ladon Whitmire</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img class="photographyImg" src="{{url_for('static', filename='WS_Images/Photography/IMG_8479.jpg')}}" alt="Seventh slide">
+                    <div class="carousel-caption showCaption">
+                        <h5>Set Photography for "Waste" (2019) - Dir. Ladon Whitmire</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img class="photographyImg" src="{{url_for('static', filename='WS_Images/Photography/IMG_7766_1.jpg')}}" alt="Eighth slide">
+                    <div class="carousel-caption showCaption">
+                        <h5>Set Photography for "Breathe" (2018) - Dir. Ladon Whitmire</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img class="photographyImg" src="{{url_for('static', filename='WS_Images/Photography/IMG_8051_1.jpg')}}" alt="Ninth slide">
+                    <div class="carousel-caption showCaption">
+                        <h5>Set Photography for "Breathe" (2018) - Dir. Ladon Whitmire</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img class="photographyImg" src="{{url_for('static', filename='WS_Images/Photography/IMG_7747.jpg')}}" alt="Tenth slide">
+                    <div class="carousel-caption showCaption">
+                        <h5>Set Photography for "Breathe" (2018) - Dir. Ladon Whitmire</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img class="photographyImg" src="{{url_for('static', filename='WS_Images/Photography/IMG_6800_1.jpg')}}" alt="Eleventh slide">
+                    <div class="carousel-caption showCaption">
+                        <h5>Set Photography for "Trombone Jones" (2018) - Dir. Christopher Rutledge</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img class="photographyImg" src="{{url_for('static', filename='WS_Images/Photography/IMG_6331.jpg')}}" alt="Twelfth slide">
+                    <div class="carousel-caption showCaption">
+                        <h5>Set Photography for "Trombone Jones" (2018) - Dir. Christopher Rutledge</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img class="photographyImg" src="{{url_for('static', filename='WS_Images/Photography/IMG_6220_1.jpg')}}" alt="Thirteenth slide">
+                    <div class="carousel-caption showCaption">
+                        <h5>Set Photography for "Trombone Jones" (2018) - Dir. Christopher Rutledge</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
+            <img id="prevMovie" src="{{url_for('static', filename='Custom_Icons/carousel-slider-left.svg')}}" alt="New Left Icon" width="32" height="32" class="carouselArrows">
+        </a>
+        <a class="carousel-control-next" href="#photoCarousel" role="button" data-slide="next">
+            <img id="nextMovie" src="{{url_for('static', filename='Custom_Icons/carousel-slider-right.svg')}}" alt="New Right Icon" width="32" height="32" class="carouselArrows">
+        </a>
+    </div>
+
+    <div class="container-fluid mobileSetup">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="photoImgMobile" src="{{url_for('static', filename='WS_Images/Photography/IMG_6633.jpg')}}" alt="First slide">
+                <img class="photoImgMobile" src="{{url_for('static', filename='WS_Images/Photography/IMG_6612_1.jpg')}}" alt="Second slide">
+                <img class="photoImgMobile" src="{{url_for('static', filename='WS_Images/Photography/IMG_6629.jpg')}}" alt="Third slide">
+                <img class="photoImgMobile" src="{{url_for('static', filename='WS_Images/Photography/IMG_9108.jpg')}}" alt="Fourth slide">
+                <img class="photoImgMobile" src="{{url_for('static', filename='WS_Images/Photography/IMG_9182.jpg')}}" alt="Fifth slide">
+                <img class="photoImgMobile" src="{{url_for('static', filename='WS_Images/Photography/IMG_8861.jpg')}}" alt="Sixth slide">
+                <img class="photoImgMobile" src="{{url_for('static', filename='WS_Images/Photography/IMG_8479.jpg')}}" alt="Seventh slide">
+                <img class="photoImgMobile" src="{{url_for('static', filename='WS_Images/Photography/IMG_7766_1.jpg')}}" alt="Eighth slide">
+                <img class="photoImgMobile" src="{{url_for('static', filename='WS_Images/Photography/IMG_8051_1.jpg')}}" alt="Ninth slide">
+                <img class="photoImgMobile" src="{{url_for('static', filename='WS_Images/Photography/IMG_7747.jpg')}}" alt="Tenth slide">
+                <img class="photoImgMobile" src="{{url_for('static', filename='WS_Images/Photography/IMG_6800_1.jpg')}}" alt="Eleventh slide">
+                <img class="photoImgMobile" src="{{url_for('static', filename='WS_Images/Photography/IMG_6331.jpg')}}" alt="Twelfth slide">
+                <img class="photoImgMobile" src="{{url_for('static', filename='WS_Images/Photography/IMG_6220_1.jpg')}}" alt="Thirteenth slide">
+            </div>
+        </div>
+    </div>
+{% endblock %}

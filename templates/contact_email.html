@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <style>
+            .main {
+                width: 50vw;
+                margin: auto;
+                text-align: center;
+            }
+            .message {
+                margin: auto;
+                width: fit-content;
+                max-width: 100%;
+                white-space: pre-wrap;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container main">
+            <h1>Website Submission</h1>
+            <p>You received a submission on larritola.com</p>
+
+            <h5>Name</h5>
+            <p>{{ name }} {{ surname }}</p>
+
+            <h5>Email</h5>
+            <p>{{ email }}</p>
+
+            <h5>Message</h5>
+            <p class="message">{{ message }}</p>
+        </div>
+    </body>
+</html>

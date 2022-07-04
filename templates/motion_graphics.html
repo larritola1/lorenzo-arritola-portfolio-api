@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block myScripts %}
+    <script type="text/javascript" src="{{url_for('static', filename='js/reset_scroll.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/carousel_videos.js')}}"></script>
+{% endblock %}
+
+{% block title %}
+    Motion Graphics
+{% endblock %}
+
+{% block page_name %}
+    <div class="pageNameContainer">
+        <div class="container" id="pageTitleBox">
+            <span class="navbar-text">
+                Motion Graphics
+            </span>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block main %}
+        <div id="pagesCarousel" class="carousel slide mt-5" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+                <li data-target="#pagesCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#pagesCarousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner embed-responsive embed-responsive-16by9">
+                <div class="carousel-item embed-responsive-item active">
+                    <iframe id="StuBridgeReel" class="embed-responsive-item" src="https://www.youtube.com/embed/pUTi-zi63e8?enablejsapi=1" name="First slide" allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item embed-responsive-item">
+                    <iframe id="TransyFacts" class="embed-responsive-item" src="https://www.youtube.com/embed/dKJ2L2kC07U?enablejsapi=1" name="Second slide" allowfullscreen></iframe>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#pagesCarousel" role="button" data-slide="prev">
+                <img id="prevMovie" src="{{url_for('static', filename='Custom_Icons/carousel-slider-left.svg')}}" alt="New Left Icon" width="32" height="32" class="carouselArrows">
+            </a>
+            <a class="carousel-control-next" href="#pagesCarousel" role="button" data-slide="next">
+                <img id="nextMovie" src="{{url_for('static', filename='Custom_Icons/carousel-slider-right.svg')}}" alt="New Right Icon" width="32" height="32" class="carouselArrows">
+            </a>
+        </div>
+
+        <div class="container-fluid mobileSetup">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="StuBridgeReelMobile" class="embed-responsive-item" src="https://www.youtube.com/embed/pUTi-zi63e8?enablejsapi=1" name="First slide" allowfullscreen></iframe>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="TransyFactsMobile" class="embed-responsive-item" src="https://www.youtube.com/embed/dKJ2L2kC07U?enablejsapi=1" name="Second slide" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
